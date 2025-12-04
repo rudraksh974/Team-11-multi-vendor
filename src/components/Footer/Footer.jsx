@@ -1,4 +1,3 @@
-import React from 'react'
 import './Footer.css'
 import { assets } from '../../assets/assets'
 
@@ -7,9 +6,11 @@ const Footer = () => {
     <div className='footer' id='footer'>
         <div className="footer-content">
             <div className="footer-content-left">
-                <img src={assets.logo} alt="" />
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum in, beatae dolorem non optio cupiditate, quam sunt dicta dolores minima exercitationem ducimus totam aut asperiores inventore harum laudantium. Distinctio, libero.</p>
-                <div className="footer-social-icons">
+            <h1 className="text-5xl font-extrabold text-white tracking-wide">
+            QuickBuy.
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum in, beatae dolorem non optio cupiditate, quam sunt dicta dolores minima exercitationem ducimus totam aut asperiores inventore harum laudantium. Distinctio, libero.</p>
+                <div className="footer-social-icons flex g-2">
                     <img src={assets.facebook_icon} alt="" />
                     <img src={assets.twitter_icon} alt="" />
                     <img src={assets.linkedin_icon} alt="" />
@@ -27,15 +28,15 @@ const Footer = () => {
             <div className="footer-content-right">
                 <h2>GET IN TOUCH</h2>
                 <ul>
-                    <li>+94 765489545</li>
-                    <li>dulanjalisenarathna93@gmail.com</li>
+                    <li>+91 76537XXXXX</li>
+                    <li>sankalpHello@gmail.com</li>
                 </ul>
             </div>
            
         </div>
         <hr />
         <p className="footer-copyright">
-            Copyright 2024 &copy; Dulanjali - All Right Reserved.
+            Copyright 2025 &copy; Sankalp - All Right Reserved.
         </p>
     </div>
   )

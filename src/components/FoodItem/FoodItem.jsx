@@ -11,7 +11,7 @@ const FoodItem = ({ id, name, price, description, image }) => {
       <div className="food-item-img-container">
         <img src={image} className="food-item-image" alt="" />
 
-        {!cartItems[id] ? (    //changes made 
+        {!cartItems[id] ? (
           <img
             className="add"
             src={assets.add_icon_white}
