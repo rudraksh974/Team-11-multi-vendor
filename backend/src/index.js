@@ -3,6 +3,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const http = require("http");
 const { Server } = require("socket.io");
+import menuRoutes from "./routes/menuRoutes.js";
 
 const { connectDB } = require("./config/db");
 const authRoutes = require("./routes/authRoutes");
@@ -22,6 +23,7 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/restaurants", restaurantRoutes);
 app.use("/api/orders", orderRoutes);
+app.use("/api/menu", menuRoutes);
 
 // HTTP + Socket.io
 const server = http.createServer(app);
